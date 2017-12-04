@@ -1,4 +1,4 @@
-> 20 oct. 2016 15:25:22
+> 04 déc. 2017 09:19:30
 
 # Git
 
@@ -155,5 +155,19 @@ git remote set-url origin git@github.com:kabbamine/repo.git
 
 * The `.git` is mandatory.
 * Use `https://github.com/USERNAME/REPO.git` to switch from `ssh` to `https`.
+
+----------------------------
+
+## Remove a gitmodule
+
+```sh
+# My need deinit -f
+git submodule deinit mysubmod
+git rm mysubmod
+git push
+rm -rf .git/modules/mysubmod
+```
+
+Verify that `git config --local -l` do not contain mysubmod.
 
 ----------------------------

@@ -1,4 +1,4 @@
-> 16 sept. 2017 23:28:40
+> 29 oct. 2017 19:45:01
 
 # Vim
 
@@ -53,6 +53,7 @@ endfunction
 
 ## Misc
 
+- `zi`: Toggle `foldenable`.
 - `g<C-a/x>`: In visual mode, increment/decrement by additional count.
 - `Ctrl-m/j` insert a new line in insert mode
 - `[I`: Display all lines that contain the keyword under the cursor.
@@ -111,3 +112,7 @@ Using `q` register, the trick is to add `@q` in the end of our macro to make it 
 
 ## Plugins
 
+#### Vim-sandwich
+
+- `f/F` Function surrounding.
+  *In case of nested functions, sdf deletes the function under the cursor while sdF deletes the function surrounding.*
